@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='fr' ng-app='Patrock_Module'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!--Bootstrap 5-->
+    <link href = 'css/bootstrap.min.css' rel = 'stylesheet'>
+    <title>Angular Modalis</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Recharger sa carte Modalis</h1>
+        <h3>Photos gérées par AngularJS</h3>
+        <div id ='main-content' ng-controller='PMController'>
+            <p>Le texte ici changera</p> 
+            <img src="images/modalis_{{numPhoto}}.jpg">
+            <div> ici on va mettre un bouton</div>
+        </div>
+    </div>
+</body>
+<script src='scr/angular.min.js'></script> <!--Attention au dyslexies !-->
+<script src='scr/app.js'></script>
+<!-- Autre JS si besoin -->
+</html>
