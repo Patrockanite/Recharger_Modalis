@@ -6,10 +6,23 @@
     PMController.$inject = ['$scope'];
     function PMController($scope) {
        
-        var tabPhoto = [1,2,3,4,5];
-        $scope.numPhoto = tabPhoto[0];
-        /* On mettra un bouton en place pour changer les images et le texte */
-
+        $scope.i=1;
+        $scope.numEtape=1;
+        $scope.numPhoto = 1;
+       
+       
+        $scope.EtapeSuivante = function(){
+            if($scope.i<5){
+                $scope.i++;
+                $scope.numEtape = $scope.i;
+                $scope.numPhoto = $scope.i;
+            }
+            else{
+                $scope.i = 1;
+                $scope.numEtape = $scope.i;
+                $scope.numPhoto = $scope.i;
+            }
+        }
 
 
 
